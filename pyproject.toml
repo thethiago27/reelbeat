@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reelbeat"
+version = "0.1.0"
+description = "Gera vídeos verticais cortados na batida da música a partir de pastas de fotos e vídeos."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["video", "reels", "beat", "music", "slideshow", "ffmpeg"]
+dependencies = [
+    "numpy>=1.24",
+    "opencv-python-headless>=4.8",
+    "pillow>=10.0",
+    "pillow-heif>=0.13",
+    "librosa>=0.10",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+reelbeat = "reelbeat.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/thethiago27/reelbeat"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+reelbeat = ["assets/fonts/*.ttf", "assets/fonts/*.txt"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B905"]  # zip() sem strict é intencional (sequências de tamanhos diferentes)
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: testes que usam o librosa de verdade"]

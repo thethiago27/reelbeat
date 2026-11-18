@@ -1,0 +1,240 @@
+# Exemplo real: roteiro gerado por `reelbeat auto` para uma viagem a Porto Seguro, Arraial d'Ajuda e Trancoso
+# (53 fotos e vídeos em 3 pastas, música de 139,7 BPM). Os arquivos de mídia e a música não estão no repositório.
+#   reelbeat auto musica.mp3 midia --names "PORTO SEGURO,ARRAIAL D'AJUDA,TRANCOSO" --subtitle BAHIA --tag BA
+# 'at' é a batida em que cada item entra; ele dura até o próximo item.
+reelbeat: 1
+audio: musica.mp3
+analysis: musica.beats.json
+size: [1080, 1920]
+fps: 30
+end: 140
+fade_out: 0.9
+timeline:
+- at: start
+  text: 'small: UMA VIAGEM POR'
+- at: 0
+  title: 'big: PORTO / SEGURO'
+- at: 2
+  text: 'small: COM PARADA EM'
+- at: 4
+  title: 'big: ARRAIAL / D''AJUDA'
+- at: 6
+  text: 'small: E'
+- at: 8
+  title: 'big: TRAN / COSO'
+- at: 10
+  knock:
+    clip: midia/01-porto-seguro/IMG_0411.mov
+    start: 0.5
+    speed: 3
+    layout: 'tall: BAHIA'
+- at: 12
+  clip: midia/01-porto-seguro/IMG_0411.mov
+  start: 3.078
+  speed: 3
+- at: 16
+  photo: midia/01-porto-seguro/IMG_0385.jpg
+  motion: in
+- at: 18
+  photo: midia/01-porto-seguro/IMG_0386.jpg
+  motion: out
+- at: 20
+  photo: midia/01-porto-seguro/IMG_0389.jpg
+  motion: in
+- at: 22
+  photo: midia/01-porto-seguro/IMG_0391.jpg
+  motion: out
+- at: 24
+  photo: midia/01-porto-seguro/IMG_0399.jpg
+- at: 25
+  photo: midia/01-porto-seguro/IMG_0400.jpg
+- at: 26
+  photo: midia/01-porto-seguro/IMG_0414.jpg
+- at: 27
+  photo: midia/01-porto-seguro/IMG_0415.jpg
+- at: 28
+  photo: midia/01-porto-seguro/IMG_0418.jpg
+- at: 29
+  photo: midia/01-porto-seguro/IMG_0419.jpg
+- at: 30
+  burst:
+  - midia/01-porto-seguro/IMG_0389.jpg
+  - midia/01-porto-seguro/IMG_0391.jpg
+  - midia/01-porto-seguro/IMG_0399.jpg
+  - midia/01-porto-seguro/IMG_0400.jpg
+  - midia/01-porto-seguro/IMG_0414.jpg
+  - midia/01-porto-seguro/IMG_0415.jpg
+  - midia/01-porto-seguro/IMG_0418.jpg
+  - midia/01-porto-seguro/IMG_0419.jpg
+  step: 0.25
+- at: 32
+  strobe:
+  - 'stack x9: PORTO SEGURO'
+  - blank
+  - 'split: PORTO / SEGURO'
+  - 'grid 4x9: BA'
+  - 'small: ARRAIAL D''AJUDA'
+  - 'rows x5: ARRAIAL D''AJUDA'
+  - 'stack x4: BA'
+  - blank
+  - 'grid 2x12: PORTO SEGURO'
+  - 'tall: BAHIA'
+  - 'rows x4: BAHIA'
+  - 'tall: PORTO / SEGURO'
+- at: 44
+  clip: midia/01-porto-seguro/IMG_0416.mov
+  start: 0.5
+  speed: 4
+- at: 47
+  photo: midia/01-porto-seguro/IMG_0422.jpg
+  motion: in
+- at: 49
+  photo: midia/01-porto-seguro/IMG_0423.jpg
+- at: 50
+  photo: midia/01-porto-seguro/IMG_0436.jpg
+  motion: out
+- at: 52
+  colors: [red, green, blue]
+  layout: 'tall: ARRAIAL / D''AJUDA'
+- at: 55
+  photo: midia/02-arraial/IMG_0392.jpg
+  motion: in
+- at: 57
+  photo: midia/02-arraial/IMG_0393.jpg
+- at: 58
+  photo: midia/02-arraial/IMG_0394.jpg
+- at: 59
+  strobe: ['tall: ARRAIAL / D''AJUDA']
+- at: 60
+  photo: midia/02-arraial/IMG_0397.jpg
+- at: 61
+  photo: midia/02-arraial/IMG_0405.jpg
+- at: 62
+  photo: midia/02-arraial/IMG_0409.jpg
+- at: 63
+  strobe: ['rows x5: ARRAIAL D''AJUDA']
+- at: 64
+  photo: midia/02-arraial/IMG_0420.jpg
+- at: 65
+  photo: midia/02-arraial/IMG_0424.jpg
+- at: 66
+  photo: midia/02-arraial/IMG_0427.jpg
+- at: 67
+  strobe: ['stack x9: ARRAIAL D''AJUDA']
+- at: 68
+  photo: midia/02-arraial/IMG_0440.jpg
+- at: 69
+  photo: midia/02-arraial/IMG_0441.jpg
+- at: 70
+  photo: midia/02-arraial/IMG_0447.jpg
+- at: 71
+  burst:
+  - midia/02-arraial/IMG_0392.jpg
+  - midia/02-arraial/IMG_0393.jpg
+  - midia/02-arraial/IMG_0394.jpg
+  - midia/02-arraial/IMG_0397.jpg
+  - midia/02-arraial/IMG_0405.jpg
+  - midia/02-arraial/IMG_0409.jpg
+  - midia/02-arraial/IMG_0420.jpg
+  - midia/02-arraial/IMG_0424.jpg
+  - midia/02-arraial/IMG_0427.jpg
+  - midia/02-arraial/IMG_0440.jpg
+  - midia/02-arraial/IMG_0441.jpg
+  - midia/02-arraial/IMG_0447.jpg
+  step: 0.25
+- at: 75
+  photo: midia/02-arraial/IMG_0455.jpg
+  motion: in
+- at: 77
+  photo: midia/02-arraial/IMG_0456.jpg
+- at: 78
+  photo: midia/02-arraial/IMG_0459.jpg
+- at: 79
+  strobe: ['grid 4x9: BA']
+- at: 80
+  photo: midia/02-arraial/IMG_0469.jpg
+- at: 81
+  photo: midia/02-arraial/IMG_0472.jpg
+- at: 82
+  photo: midia/02-arraial/IMG_0496.jpg
+- at: 83
+  colors: [red, green, blue]
+  layout: 'tall: TRAN / COSO'
+- at: 86
+  clip: midia/03-trancoso/IMG_0515.mov
+  start: 0.11
+  speed: 1.61
+- at: 89
+  clip: midia/03-trancoso/IMG_0516.mov
+  start: 0.5
+  speed: 4
+- at: 92
+  clip: midia/03-trancoso/IMG_0522.mov
+  start: 0.14
+  speed: 1.92
+- at: 95
+  photo: midia/03-trancoso/IMG_0523.jpg
+- at: 96
+  clip: midia/03-trancoso/IMG_0525.mov
+  start: 0.5
+  speed: 3
+  ramp:
+    at: 96
+    to: 20.13
+- at: 100
+  photo: midia/03-trancoso/IMG_0529.jpg
+  motion: in
+- at: 102
+  photo: midia/03-trancoso/IMG_0534.jpg
+- at: 103
+  photo: midia/03-trancoso/IMG_0544.jpg
+- at: 104
+  clip: midia/03-trancoso/IMG_0552.mov
+  start: 0.5
+  speed: 3
+  ramp:
+    at: 104
+    to: 11.95
+- at: 108
+  photo: midia/03-trancoso/IMG_0551.jpg
+  motion: in
+- at: 110
+  clip: midia/03-trancoso/IMG_0554.mov
+  start: 0.41
+  speed: 4
+- at: 113
+  photo: midia/03-trancoso/IMG_0555.jpg
+  motion: out
+- at: 115
+  photo: midia/03-trancoso/IMG_0556.jpg
+- at: 116
+  photo: midia/03-trancoso/IMG_0557.jpg
+  motion: in
+- at: 118
+  strobe: ['tall: TRAN / COSO']
+- at: 119
+  photo: midia/03-trancoso/IMG_0558.jpg
+- at: 120
+  photo: midia/03-trancoso/IMG_0559.jpg
+  motion: out
+- at: 122
+  photo: midia/03-trancoso/IMG_0561.jpg
+- at: 123
+  strobe: ['rows x5: TRANCOSO']
+- at: 124
+  photo: midia/03-trancoso/IMG_0563.jpg
+- at: 125
+  photo: midia/03-trancoso/IMG_0564.jpg
+- at: 126
+  photo: midia/03-trancoso/IMG_0568.jpg
+- at: 127
+  strobe: ['tall: TRAN / COSO', 'rows x5: TRANCOSO', 'stack x9: TRANCOSO', 'grid 4x9: BA', 'split: TRAN / COSO']
+- at: 128
+  strobe: ['stack x9: PORTO SEGURO', 'rows x5: ARRAIAL D''AJUDA', 'rows x5: TRANCOSO', 'tall: BAHIA']
+- at: 132
+  colors: [red, green, blue]
+  layout: 'tall: PORTO / SEGURO'
+- at: 135
+  text: 'tall: PORTO / SEGURO'
+- at: 137
+  text: 'small: PORTO SEGURO - BA / ARRAIAL D''AJUDA · TRANCOSO'

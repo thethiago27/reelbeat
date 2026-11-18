@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# reelbeat
+.reelbeat-cache/
+*.beats.json
+
+# mídia (fotos, vídeos e músicas ficam fora do repositório)
+*.mp4
+*.mov
+*.MOV
+*.m4v
+*.mp3
+*.m4a
+*.wav
+*.aac
+*.flac
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.heic
+*.HEIC
+*.webp
+midia/
+cartelas/
+
+# SO
+.DS_Store
+Thumbs.db
